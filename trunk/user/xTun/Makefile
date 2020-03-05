@@ -34,7 +34,9 @@ extract_test:
 	fi )
 
 clean:
-	$(MAKE) -C $(SRC_NAME) clean
+	if [ -f $(SRC_NAME)/Makefile ] ; then \
+		$(MAKE) -C $(SRC_NAME) distclean ; \
+	fi ; \
 
 romfs:
 	$(STRIP) $(THISDIR)/$(SRC_NAME)/xTun
