@@ -76,10 +76,5 @@ obj-$(CONFIG_HYPERV_NET) += hyperv/
 
 obj-$(CONFIG_RTL8367) += rtl8367/
 
-######################
-# 追加驱动？
-obj-$(CONFIG_USB_RTL8152) += usb/
-obj-$(CONFIG_USB_NET_AX8817X) += usb/
-obj-$(CONFIG_USB_NET_AX88179_178A) += usb/
-######################
+
 
